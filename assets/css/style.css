@@ -1,0 +1,97 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+body{
+ 	background: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+	display:flex;
+    min-height: 100vh;
+    flex-direction: column;
+/*    height: 100%;
+    width: 100%;*/
+ }
+.apiLogo {
+	display:inline-block;
+	height: 50px;
+	width: 50px;
+	margin-left: 5px;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+#search-button{
+	margin-top: 27px;
+}
+
+.page-footer {
+	max-height:400px;
+	width: 100%;
+ 	position:absolute;
+ 	bottom:0;
+ 	padding-top: 0px;
+ 	margin-bottom:0px;
+}
+
+#footContainer {
+	line-height: 2px;
+}
+#copyright {
+	padding-top: 20px;
+}
+
+#copyrightText {
+	font-size: 12px;
+}
+
+#footerLogo {
+	clear:right;
+	font-size: 18px;
+}
+
+#city_search {
+	padding-left: 20px;
+}
+
+@media screen and (max-width: 1080px) {
+	body {
+		background-size: full-width; 
+/*	 	background: url("../images/newYork.png");
+	    background-repeat: no-repeat;
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-size: cover;
+*/
+
+	}
+
+}
+@media screen and (max-width: 960px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 640px) {
+	.title{
+		right: 20px;
+	}
+
+	#city_search {
+		font-size: 12px;
+	}
+}

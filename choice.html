@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TravelBuddy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">      
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script><!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"</script>
+  <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script><!-- firebase travelBud -->
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+ <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/choice.css">             
+</head>
+<body>
+
+<nav>
+  <div class="nav-wrapper pink">
+  <a href="index.html" class="brand-logo white-text" id="logo">TravelBuddy</a>
+  <button class="btn waves-effect waves-light right cyan lighten-1" type="submit" name="action"
+  id="searchbutton">Search</button>
+  <form id="citysearch">
+    <div class="input-field right pink pull-m4" id="searchBar">
+      <input id="search" type="search" placeholder="search for a new city" required>
+      <label class="label-icon" for="search"><i class="material-icons"></i></label>
+    </div>
+  </form>
+  </div>
+</nav>
+
+<br>
+<div class="container white">
+  <div class="row">
+    <div class="col s12 m12 l10 offset-l1">
+      <div class="card orange darken-2" id="weatherCard">
+        <div class="card-content white-text">
+          <span class="card-title white-text" id="cityName">City Name</span>
+            <div class="row" id="weather"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+
+
+
+<div class="carousel">
+  <a class="carousel-item" href="hotel.html">
+    <div class="card">
+      <div class="card-image">
+        <img src="assets/images/hotelChoice.jpg">
+      </div>
+      <div class="card-content cyan lighten-1">
+        <p class="white-text" id="hotel">Hotels</p>
+      </div>
+    </div>
+  </a>
+  <a class="carousel-item" href="ThingsToDo.html">
+    <div class="card">
+      <div class="card-image">
+        <img src="assets/images/statue.jpeg">
+      </div>
+      <div class="card-content cyan lighten-1">
+        <p class="white-text" id="activities">Activities</p>
+      </div>               
+    </div>
+  </a>
+  <a class="carousel-item" href="nytPage.html">
+    <div class="card">
+      <div class="card-image">
+        <img src="assets/images/news.jpg">
+      </div>
+      <div class="card-content cyan lighten-1">
+        <p class="white-text" id="headlines">Headlines</p>
+      </div>
+    </div>
+  </a>
+  <a class="carousel-item" href="food.html">
+    <div class="card">
+      <div class="card-image">
+        <img src="assets/images/restaurants.jpg">
+      </div>
+      <div class="card-content cyan lighten-1">
+
+        <p class="white-text" id="food">Food</p>
+      </div>
+      </div>
+  </a>
+
+</div>
+<footer class="page-footer pink">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m10 l10 ">
+        <h5 class="white-text">Check Out More About This City</h5>
+          <a class="grey-text text-lighten-3" href="food.html">Food  | </a>
+          <a class="grey-text text-lighten-3" href="hotel.html">Hotels  | </a>
+          <a class="grey-text text-lighten-3" href="thingstodo.html">Activities  | </a>
+          <a class="grey-text text-lighten-3" href="nytPage.html">Headlines</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m10 l10">
+        <p class="white-text">Made Possible By:</p>
+        <a href="https://www.zomato.com/woodbridge-nj"><img src="assets/images/zomato.png" class="apiLogo"></a>
+        <a href="https://www.tripexpert.com/"><img src="assets/images/TripExpert_logo.png" class="apiLogo"></a>
+        <a href="https://openweathermap.org"><img src="assets/images/OpenWeatherMap_logo.png" class="apiLogo"></a>
+        <a href="https://www.nytimes.com/"><img src="assets/images/New-York-Times-logo.jpg" class="apiLogo"></a>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      <div class="row">
+      <div class="col s12 m3 l2">
+        <h5 class="white-text">TravelBuddy</h5>
+      </div>
+      <div class="col s12 m10 l8 offset-l2" id="copyright">
+            © 2017 Copyright Romilla Pereira, Emily Polansky, Michael Russo, and Mike Yingling
+      </div>
+     </div>
+    </div>
+  </div>
+</footer>
+
+<!-- scripts -->
+<script src="assets/javascript/choiceapp.js">
+</script>
+   </body>
+</html>
+
+

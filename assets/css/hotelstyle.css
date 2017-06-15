@@ -1,0 +1,125 @@
+body{
+	background-image: url("../images/hotel.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+	background-size: cover;
+	display: flex;
+	min-height:100vh;
+	flex-direction: column;
+
+}
+main {
+	flex: 1 0 auto;
+}
+
+#column0,
+#column1,
+#column2,
+#column3,
+#column4,
+#column5,
+#column6,
+#column7,
+#column8,
+#column9 {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 .75rem;
+    min-height: 1px;
+    width: 500px;
+    background-color: #FF9300;
+    color: white;
+   } 
+
+#city-form{
+	background-color: #FF0057;
+}
+
+.center{
+	color:white;
+	font-size:small;
+}
+
+.apiLogo {
+	height: 50px;
+	width: 50px;
+	float: left;
+	margin-left: 5px;
+}
+
+#logo {
+	left: 80px;
+}
+
+#pageTitle {
+	left: 275px;
+	font-size: 25px;
+}
+
+#searchbutton {
+	top: 15px;
+	right: 10px;
+}
+#searchbutton {
+	top: 15px;
+	right: 5px;
+}
+
+#searchBar {
+	right: 10px;
+	color: #26c6da;
+}
+
+.title {
+	text-indent: 3%;
+}
+
+#copyright {
+    padding-top: 20px;
+}
+
+
+
+@media screen and (max-width: 960px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 640px) {
+	#logo {
+		font-size: 20px;
+		left: 60px;
+	}
+
+	#pageTitle {
+		left: 145px;
+		font-size: 15px;
+	}
+
+	#searchbar {
+		left: 20px;
+		font-size: 15px
+	}
+
+	#search {
+		padding-left: 0px;
+		width: 160px;
+	}
+	
+	#column0,
+	#column1,
+	#column2,
+	#column3,
+	#column4,
+	#column5,
+	#column6,
+	#column7,
+	#column8,
+	#column9 {
+    	width: 435px;
+   } 
+}
